@@ -62,4 +62,27 @@ function playRound(humanChoice, computerChoice) {
 
 } 
 
-playRound(getHumanChoice(),getComputerChoice())
+function playGame(){
+    
+    for(i = 0 ; i < 5 ; i++){
+        playRound(getHumanChoice(),getComputerChoice())
+        console.log(humanScore , computerScore)
+      
+    }
+
+    if(computerScore < humanScore){
+        console.log("You Won")
+      }
+      else if(humanScore < computerScore){
+        console.log("Computer Wins")
+      }
+      else{
+        console.log("It's a draw Game")
+      }
+
+      
+
+
+}
+
+playGame()
