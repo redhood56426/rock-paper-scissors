@@ -1,5 +1,5 @@
 function getComputerChoice(){
-    const game = ["Rock" , "Paper", "Scissor"]
+    const game = ["Rock" , "Paper", "Scissors"]
     let result;
     let random = Math.floor( Math.random() * 3 + 1 )
     if(random == 1 ){
@@ -16,4 +16,8 @@ function getComputerChoice(){
 
 }
 
-console.log(getComputerChoice())
+function getHumanChoice(){
+    let input = prompt("Enter Your Choice : Rock , Paper , Scissors")
+    return console.log(input)
+}
+getHumanChoice()
